@@ -1,0 +1,257 @@
+body {
+    margin: 0px;
+}
+@font-face {
+    font-family: nms;
+    src: url(../fonts/NMSGeoSans_Kerned.ttf);
+}
+@font-face {
+    font-family: oxanium;
+    src: url(../fonts/Oxanium/static/Oxanium-Regular.ttf);
+}
+
+/*Sign-up Form*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@font-face {
+    font-family: roboto;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: roboto-bold;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+#sign-upForm {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+
+    display: flex;
+    justify-content: start;
+    background-color: #ffffffab;
+    width: 50%;
+    height: fit-content;
+    padding: 26px;
+    border-radius: 50px;
+
+
+}
+.sign-up {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 48px;
+    font-family: oxanium, sans-serif;
+}
+h1 {
+    font-family: nms;
+    font-weight: 700;
+    font-size: 2vw;
+    margin: 10% 0px;
+}
+.benefits-list {
+    margin: 5% 0px;
+    list-style: none;
+}
+.icon-list {
+    margin-right: 10px;
+}
+.benefits-list-item {
+    display: flex;
+    margin: 10px 0;
+}
+input {
+    display: block;
+    width: 100%;
+    margin: 5% 0px;
+    padding: 10px;
+    border: #00000050 solid 1px;
+    border-radius: 5px;
+}
+input:active {
+    border: #000 solid 1px;
+}
+#errorMessage {
+    font-size: 16px;
+    display: none;
+    color: red;
+    float:right;
+}
+button {
+    text-align: center;
+    padding: 5%;
+    margin: 5% 0;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(235, 18%, 26%);
+    color: #fff;
+    width: 100%;
+    font-family: oxanium, sans-serif;
+    font-weight: 700;
+    transition: 600ms;
+}
+
+button:hover {
+    background: linear-gradient(90deg, hsl(4, 100%, 67%), rgb(255, 137, 87));
+    box-shadow: 10px 10px 20px 10px hsla(4, 100%, 67%, 20%);
+}
+.illustration-sign-up {
+    border-radius: 0px 5cap 50px 0px;
+    width: 50%;
+}
+.illustration-sign-up-mobile {
+    border-radius: 0px 0px 50px 50px;
+    display: none;
+    width: 100%;
+}
+#successMessage {
+    display: none;
+    flex-direction: column;
+    font-family: oxanium, sans-serif;
+
+    width: 35vw;
+    height: 35vw;
+    padding: 5vw;
+    background-color: #fff;
+    border-radius: 40px;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+}
+.icon-success {
+    width: 75px;
+}
+.successMessage-header {
+    margin: 5% 0;
+}
+/*Main*/
+#menu {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    filter: blur(5px);
+
+    background-image: url('../images/No-Mans-Sky-4-K-Wallpaper.jpg') ;
+    background-color: #202020;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu-item {
+    color: #fff;
+    font-size:3rem;
+    font-family: nms, presstart, arial;
+
+    display: block;
+    text-decoration: none;
+    padding: 2vw;
+    transition: 400ms ease-out;
+}
+
+#menu-items {
+    margin-left: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+#menu-items:hover > .menu-item {
+    opacity: 0.3;
+}
+
+#menu-items:hover > .menu-item:hover {
+    opacity: 1;
+}
+/*
+#menu-background-pattern {
+    height: 100vh;
+    width: 100vw;
+
+    background-image: radial-gradient(rgba(2255, 255, 255) 9% trasparent 9%);
+    background-position: 0% 0%;
+    background-size: 12vmin 12vmin;
+
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+
+}
+#menu-background-pattern {
+    background-size: 11vmin 11vmin;
+    opacity: 0.5;
+} 
+*/
+#page-name {
+    margin-left: 10vw;
+    align-items: center;
+    display: flex;
+    font-family: nms, presstart, arial;
+    font-size: 8rem;
+    color: #fff;
+    float: right;
+}
+
+
+
+/*Mobile Media Query*/
+@media (max-width:801px) {
+    #menu {
+        background-size: cover;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    #page-name {
+        display: block;
+        margin: 0px;
+        padding: 3vw;
+        border: 1px solid #ffd;
+        border-radius: 25px;
+        backdrop-filter: blur(2px);
+        background-color: #4747476f;
+        font-size: 16vw;
+    }
+    #menu-items {
+        margin: 20vw 0 0 0;
+    }
+    /*Sign-up Form*/
+    #sign-upForm {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+        padding: 0px;
+    }
+    .sign-up {
+        padding: 10vw;
+    }
+    .illustration-sign-up {
+        display: none;
+    }
+    .illustration-sign-up-mobile {
+        display: block;
+    }
+    h1 {
+        margin: 5vw 0;
+        font-size: 10vw;
+    }
+    #successMessage {
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+    #dismissButton {
+        margin-top: 50%;
+    }
+}
