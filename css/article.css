@@ -87,7 +87,6 @@ label.logo {
     margin: 10% 0;
 }
 a, .list {
-    display: block;
     width: 100%;
 
     text-align: center;
@@ -120,7 +119,7 @@ a, .list {
 }
 .article_wrapper{
     font-size: 16px;
-    padding: 0vw 5vw;
+    padding: 0vw 0vw 0vw 10vw;
 }
 .headline {
     display: inline-block;
@@ -128,7 +127,7 @@ a, .list {
     font-family: oxa,Arial, Helvetica, sans-serif;
     color: aliceblue;
     margin: 5% 0px 5% 0px; 
-    background-color: rgb(238, 62, 39);
+    background-color: #342141;
     border-radius: 10px;
     padding: 25px 30px;
 }
@@ -141,7 +140,7 @@ a, .list {
     margin-right: 40px;
     margin-bottom: 50px;
     
-    background-color: rgba(255, 0, 64, 0.562);
+    background-color: #3e596e;
     padding: 15px 20px;
     border-radius: 10px;
 }
@@ -152,13 +151,18 @@ a, .list {
     color: aliceblue;
     margin-left: 60px;
     margin-right: 40px;
-    background-color: rgba(255, 0, 76, 0.904);
+    background-color: #3b4a52;
     border-radius: 10px;
     padding: 20px 25px;
     margin: 1.5rem 0rem 1.5rem 0rem;
     line-height: 1.5;
 }
 
+.content-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 @media (max-width:801px) {
     nav {
         min-width: 10vw;
@@ -174,5 +178,9 @@ a, .list {
     .article_wrapper{
         font-size: 12px;
         padding: 0vw 5vw;
+    }
+    .section-content{
+        position: absolute;
+        right: 0;
     }
 }
