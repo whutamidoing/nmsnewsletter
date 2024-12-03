@@ -1,0 +1,201 @@
+@font-face {
+    font-family: nms-sans;
+    src: url(../fonts/NMSGeoSans_Kerned.ttf);
+}
+@font-face {
+    font-family: nms;
+    src: url(../fonts/NMSFuturaProBook_Kerned.ttf);
+}
+body {
+    background-color: #fff;
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.navbar {
+    width:100%;
+    height: 80px;
+    overflow: hidden;
+    background-color: #000;
+    box-shadow: 4px 4px 5px #101010cc;
+}
+label.logo {
+    float: left;
+    color: #fff;
+    font-size: 4rem;
+    font-family: nms,sans-serif,arial;
+
+    line-height: 70px;
+    padding: 10px 50px;
+    height: 100%;
+}
+.list {
+    float: right;
+}
+
+a.navlinks,.list {
+    float: right;
+    font-family: nms,sans-serif,arial;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 1vw;
+    text-decoration: none;
+    transition: 400ms ease-out;
+}
+a.navlinks, .list:nth-child(2) {
+    margin-right: 3rem;
+}
+.list:hover, .list:active {
+    background-color: #303030;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 88vh;
+    width: 100%;
+
+    background-image: url(../images/No-Mans-Sky-4-K-Wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment:local;
+    background-size: 100% 100%;
+
+    box-shadow: 0px -100px 100px #000 inset;
+}
+.title {
+    display: inline-block;
+    margin-left: 5rem;
+}
+.page-title {
+    font-family: nms-sans,sans-serif,arial;
+    color: #fafafa;
+    font-size: clamp(8rem, 5vw,2rem);
+    width: fit-content;
+    height: 40%;
+}
+.author-image {
+    display: inline-block;
+    margin-right: 5%;
+}
+.author-image {
+    display: flex;
+    
+    box-shadow: 0px 0px 10px #000;
+    border: 1px solid #fff;
+    border-radius:10px ;
+    transition: 400ms;
+
+    width: 50vw;
+    height: 50vh;
+}
+.traveller-img:hover {
+    box-shadow: 0px 0px 10px #fff;
+}
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+
+    padding-bottom: 15rem;
+}
+.section {
+    color: #fff;
+    font-family: nms, nms-sans, sans-serif,arial;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 20rem;
+}
+.heading, .heading-content {
+    margin-top: 1rem;
+    margin-left: 4%;
+    align-self: flex-start;
+}
+.heading {
+    font-size: 20px;
+}
+.heading-content {
+    width: 32vw;
+    font-size: 30px;
+}
+.main-content {
+    display: block;
+}
+.content_img1_wrapper {
+    display: inline;
+    margin-left: 10%;
+
+    background-color: #000;
+}
+.content_img1 {
+    display: inline;
+    width:43vw;
+    height: 110vh;
+
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+.contents-wrapper {
+    display: inline;
+    float: right;
+
+    margin-right: 10%;
+    width: 30vw;
+}
+.contents {
+    color: #fff;
+    font-family: nms;
+    font-size: 22px;
+    display: block;
+
+    margin-top: 3rem;
+    margin-left: 4%;
+}
+hr {
+    margin-top: 10%;
+    margin-bottom: 10%;
+
+    width: 100%;
+    height: 1px;
+
+    border-color: #ff9900;
+}
+.gallery {
+    height: 85rem;
+
+    background-image: url(../images/no-mans-sky-concept-art1.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+    padding-top: 15%;
+    padding-left: 2%;
+    box-shadow: 0px 100px 100px #000 inset;
+}
+.img {
+    width: 100%;
+    height:100%;
+
+    border: 1px solid #f90;
+    box-shadow: 0px 0px 10px #f90;
+    border-radius: 1px;
+}
+.imagelinks {
+    display: inline;
+    float: left;
+
+    width: 48%;
+    height: 48%;
+
+    margin: 5px;
+}
+

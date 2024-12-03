@@ -9,7 +9,6 @@ body {
     font-family: oxanium;
     src: url(../fonts/Oxanium/static/Oxanium-Regular.ttf);
 }
-
 /*Sign-up Form*/
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -139,36 +138,66 @@ button:hover {
     align-items: center;
     filter: blur(5px);
 
-    background-image: url('../images/No-Mans-Sky-4-K-Wallpaper.jpg') ;
+    background-image: url('../images/code-programming-text-lines-symbols-multi-colored.jpg') ;
     background-color: #202020;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
+.page-contents {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 4%;
+    justify-content: center;
+    text-align: justify;
+}
 
+.site-desc {
+    font-family: roboto, sans-serif;
+    text-indent: 2rem;
+    padding: 4%;
+    background: #25333ceb;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 20px;
+    margin: 5% 0px;
+    backdrop-filter: blur(4px);
+}
 .menu-item {
+    width: 100%;
     color: #fff;
     font-size:3rem;
-    font-family: nms, presstart, arial;
+    font-family: nms, presstart, sans-serif, arial;
 
     display: block;
     text-decoration: none;
-    padding: 2vw;
+    padding: 2vw 0vw;
     transition: 400ms ease-out;
+    text-indent: 2rem;
 }
 
 #menu-items {
-    margin-left: 4rem;
-    position: relative;
-    z-index: 2;
+    height: 100%;
+    width: 40%;
+    background-color: #484848;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
-
 #menu-items:hover > .menu-item {
     opacity: 0.3;
+    background: linear-gradient(90deg, transparent, transparent);
+    background-size: 0%;
+
 }
 
 #menu-items:hover > .menu-item:hover {
     opacity: 1;
+    background: linear-gradient(90deg, #af4242, transparent);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 /*
 #menu-background-pattern {
