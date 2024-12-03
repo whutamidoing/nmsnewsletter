@@ -23,6 +23,9 @@ p{
 h4 {
     margin: 10px;
 }
+li {
+    margin: 5px;
+}
 .image{
     margin: 5% 0%;
 }
@@ -158,6 +161,7 @@ label.logo {
     font-size: 2rem;
     font-family: oxa,Arial, Helvetica, sans-serif;
     background: linear-gradient(90deg, #514654, #707070, #1b344e);
+    background-blend-mode: multiply;
     color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -209,6 +213,17 @@ label.logo {
     width: 100%;
     height: 100%;
 }
+
+/*Table*/
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    padding: 5px;
+    border: 1px solid #000;
+}
+
 
 @media (max-width:801px) {
     nav {

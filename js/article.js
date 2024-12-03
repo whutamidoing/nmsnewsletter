@@ -11,26 +11,32 @@ function changeTab(event, tabNum){
     url = 'article-content/tab1.html';
     sidebarURL = 'article-content/sideBar1.html';
     title.innerHTML = '<h1 class="headline">COMPUTER SCIENCE AS DISCIPLINE, COMPUTING DISCIPLINES AND MAJORS</h1>';
+    title.style.backgroundImage = "url(../images/backgrounds/whatsbrodoing.jpg)";
   } else if (tabNum == 2) {
     url = 'article-content/tab2.html';
     sidebarURL = 'article-content/sideBar2.html';
-    title.innerHTML = '<h1 class="headline">DATA AND INFORMATION, INFORMATION SYSTEMS, and DIFFERENT TYPES OF SUPPORT SYSTEMS IN INFORMATION SYSTEMS ANALYSIS/REACTION</h1>';
+    title.innerHTML = '<h1 class="headline">DATA AND INFORMATION, INFORMATION SYSTEMS, and DIFFERENT TYPES OF SUPPORT SYSTEMS IN INFORMATION SYSTEMS</h1>';
+    title.style.backgroundImage = "url(../images/backgrounds/backgroundfor2.jpg)";
   } else if (tabNum == 3) {
     url = 'article-content/tab3.html';
     sidebarURL = 'article-content/sideBar3.html';
     title.innerHTML = '<h1 class="headline">NUMBER SYSTEMS</h1>';
+    title.style.backgroundImage = "url(../images/backgrounds/binary.jpg)";
   }  else if (tabNum == 4) {
     url = 'article-content/tab4.html';
     sidebarURL = 'article-content/sideBar4.html';
     title.innerHTML = '<h1 class="headline">Computer Hardware and Software: Their Implementations in the Different Institutions in the Community</h1>';
+    title.style.backgroundImage = "url(../images/backgrounds/its-a-computer.jpg)";
   } else if (tabNum == 5) {
     url = 'article-content/tab5.html';
     sidebarURL = 'article-content/sideBar5.html';
     title.innerHTML = '<h1 class="headline">Comparative Study on Different Types of Motherboards</h1>';
+    title.style.backgroundImage = "url(../images/backgrounds/backgroundfor2.jpg)";
   }  else if (tabNum == 6) {
     url = 'article-content/tab6.html';
     sidebarURL = 'article-content/sideBar6.html';
     title.innerHTML = '<h1 class="headline">Comparative Study on Different Types of Computers</h1>';
+    title.style.backgroundImage = "url(../images/backgrounds/backgroundfor2.jpg)";
   }
 
   //Load content dynamically using Ajax
