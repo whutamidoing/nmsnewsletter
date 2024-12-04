@@ -11,12 +11,12 @@ function changeTab(event, tabNum){
     url = 'article-content/tab1.html';
     sidebarURL = 'article-content/sideBar1.html';
     title.innerHTML = '<h1 class="headline">COMPUTER SCIENCE AS DISCIPLINE, COMPUTING DISCIPLINES AND MAJORS</h1>';
-    title.style.backgroundImage = "url(../images/backgrounds/whatsbrodoing.jpg)";
+    title.style.backgroundImage = "url(images/backgrounds/whatsbrodoing.jpg)";
   } else if (tabNum == 2) {
     url = 'article-content/tab2.html';
     sidebarURL = 'article-content/sideBar2.html';
     title.innerHTML = '<h1 class="headline">DATA AND INFORMATION, INFORMATION SYSTEMS, and DIFFERENT TYPES OF SUPPORT SYSTEMS IN INFORMATION SYSTEMS</h1>';
-    title.style.backgroundImage = "url(../images/backgrounds/backgroundfor2.jpg)";
+    title.style.backgroundImage = "url(images/backgrounds/backgroundfor2.jpg)";
   } else if (tabNum == 3) {
     url = 'article-content/tab3.html';
     sidebarURL = 'article-content/sideBar3.html';
