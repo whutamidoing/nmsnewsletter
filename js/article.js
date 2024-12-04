@@ -31,15 +31,16 @@ function changeTab(event, tabNum){
     url = 'article-content/tab5.html';
     sidebarURL = 'article-content/sideBar5.html';
     title.innerHTML = '<h1 class="headline">Comparative Study on Different Types of Motherboards</h1>';
-    title.style.backgroundImage = "url(../images/backgrounds/backgroundfor2.jpg)";
+    title.style.backgroundImage = "url(../images/backgrounds/closeup-of-computer-motherboard.jpg)";
   }  else if (tabNum == 6) {
     url = 'article-content/tab6.html';
     sidebarURL = 'article-content/sideBar6.html';
     title.innerHTML = '<h1 class="headline">Comparative Study on Different Types of Computers</h1>';
-    title.style.backgroundImage = "url(../images/backgrounds/backgroundfor2.jpg)";
+    title.style.backgroundImage = "url(../images/backgrounds/pdp.jpg)";
+    title.style.backgroundPositionY = "center";
   }
 
-  //Load content dynamically using Ajax
+  //load content dynamically using Ajax
 
   //article wrapper
   fetch(url)

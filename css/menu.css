@@ -220,7 +220,6 @@ button:hover {
 } 
 */
 #page-name {
-    margin-left: 10vw;
     align-items: center;
     display: flex;
     font-family: nms, presstart, arial;
