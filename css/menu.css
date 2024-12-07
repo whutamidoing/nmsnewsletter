@@ -137,6 +137,7 @@ button:hover {
     height: 100vh;
     align-items: center;
     filter: blur(5px);
+    pointer-events: none;
 
     background-image: url('../images/code-programming-text-lines-symbols-multi-colored.jpg') ;
     background-color: #202020;
@@ -236,19 +237,29 @@ button:hover {
         background-size: cover;
         flex-direction: column; 
         justify-content: center;
+        height: 100%;
     }
     #page-name {
         display: block;
         margin: 0px;
         padding: 3vw;
-        border: 1px solid #ffd;
-        border-radius: 25px;
-        backdrop-filter: blur(2px);
-        background-color: #4747476f;
         font-size: 16vw;
+        text-align: center;
     }
     #menu-items {
-        margin: 20vw 0 0 0;
+        margin: 0vw 0 0 0;
+        width: 100%;
+    }
+    #menu-items > img {
+        width: 25%;
+    }
+    .menu-item {
+        margin: 10px 0px;
+    }
+    .site-desc {
+        font-size: 1rem;
+        margin: 0px;
+        border-radius: 0px;
     }
     /*Sign-up Form*/
     #sign-upForm {

@@ -4,7 +4,7 @@ function validateEmail() {
   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (emailPattern.test(emailInput)) {
-    // Email is valid, show the hidden element
+    //if email is valid show success message element
     document.getElementById('successMessage').style.display = 'flex';
     document.getElementById('sign-upForm').style.display = 'none';
   } else {
@@ -14,5 +14,6 @@ function validateEmail() {
 function dismissMessage() {
 document.getElementById('successMessage').style.display = 'none';
 document.getElementById('sign-upForm').style.display = 'none';
-  document.getElementById('menu').style.filter = 'blur(0px)';
+document.getElementById('menu').style.filter = 'blur(0px)';
+document.getElementById('menu').style.pointerEvents = 'auto';
 }

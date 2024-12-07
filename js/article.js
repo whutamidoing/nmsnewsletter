@@ -1,3 +1,11 @@
+const dropdownButton = document.querySelector('.dropdown-button');
+const dropdownMenu = document.querySelector('.buttons');
+
+dropdownButton.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('active');
+    console.log('works');
+});
+
 //Takes a tab number and fetches a url on the corresponding number
 function changeTab(event, tabNum){
   const article = document.querySelector('.article_wrapper');
@@ -42,7 +50,7 @@ function changeTab(event, tabNum){
 
   //load content dynamically using Ajax
 
-  //article wrapper
+  //article wrapper fetch
   fetch(url)
       .then(response => response.text())
       .then(data => {
@@ -52,7 +60,7 @@ function changeTab(event, tabNum){
             console.error('Error loading content:', error);
         });
 
-//sidebar
+//sidebar fetch
 fetch(sidebarURL)
         .then(response => response.text())
         .then(data => {
