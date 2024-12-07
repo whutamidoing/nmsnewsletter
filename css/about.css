@@ -14,6 +14,24 @@
     font-family: futura;
     src: url(../fonts/NMSFuturaProBook_Kerned.ttf);
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px #fff; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00000073; 
+  border-radius: 10px;
+  transition: 600ms ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #244a75; 
+}
+
 body {
     background-color: #fff;
 }
@@ -262,7 +280,7 @@ a.navlinks,.list {
     }
     .page-title{
         margin: 5vh;
-        font-size: clamp(4rem, 5vw,2rem);
+        font-size: 12vw;
     }
     .logo{
         padding: 5px;

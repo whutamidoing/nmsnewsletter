@@ -64,8 +64,6 @@ nav {
     min-height: 100vh;
     height: auto;
     position: fixed;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 .navcontent-wrapper {
     display: flex;
@@ -260,8 +258,14 @@ td, th {
         width: 10vw;
         opacity: 1;
     }
+    .nav-items{
+        width: 100%;
+    }
 }
 @media (max-width:801px) {
+    .nav-items{
+        width: fit-content;
+    }
     .dropdown-button{
         cursor: pointer;
         display: inline-block;
@@ -272,38 +276,34 @@ td, th {
         outline: none;
         color: #000;
         padding: 14px 16px;
-        background-color: #fff;
+        background-color: #ffffff;
         font-family: inherit;
         margin: 0;
     }
     .buttons {
-        display: flex;
+        display: none;
         flex-direction: column;
         position: absolute;
-        background: #fff;
+        background: #464646;
         z-index: 1;
         transition: 400ms ease-out;
-    }
-      
-    .buttons {
-        display: none;
+        width: 80px;
     }
     .dropdown-button:active {
         background: #505050;
     }
-    .buttons {
+    .buttons a {
         float: none;
         color: #000;
         padding: 5px;
         text-decoration: none;
-        display: block;
         text-align: left;
     }
       
-    .buttons > ul.active {
+    .buttons.active {
         display: block;
     }
-    .buttons > ul > li:hover > a {
+    .buttons > li:hover > a {
         color: #fff;
     }
     nav {
@@ -313,19 +313,37 @@ td, th {
         flex-direction: row;
         justify-content: space-between;
     }
-    .buttons{
-        width: 5%;
-        flex-direction: column;
+    label.logo {
+        margin: 5px;
+    }
+    .search-bar {
+        margin: 5px;
     }
     .list {
         width: 100%;
     }
+    .link {
+        height: fit-content;
+    }
+    .link > a {
+        font-size: 10px;
+    }
+    .content-links {
+        width: fit-content;
+    }
+    .article-main {
+        padding: 0%;
+    }
     .article_wrapper{
-        font-size: 12px;
-        padding: 0vw 5vw;
+        width: 80vw;
+        font-size: 10px;
+        padding: 0vw 2vw;
+    }
+    .section-wrapper {
+        margin: 0px;
     }
     .section-content{
-        position: absolute;
-        right: 0;
+        position: sticky;
+        top: 10vh;
     }
 }
