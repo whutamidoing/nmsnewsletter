@@ -29,22 +29,22 @@ function changeTab(event, tabNum){
     url = 'article-content/tab3.html';
     sidebarURL = 'article-content/sideBar3.html';
     title.innerHTML = '<h1 class="headline">NUMBER SYSTEMS</h1>';
-    title.style.backgroundImage = "url(../images/backgrounds/binary.jpg)";
+    title.style.backgroundImage = "url(images/backgrounds/binary.jpg)";
   }  else if (tabNum == 4) {
     url = 'article-content/tab4.html';
     sidebarURL = 'article-content/sideBar4.html';
     title.innerHTML = '<h1 class="headline">Computer Hardware and Software: Their Implementations in the Different Institutions in the Community</h1>';
-    title.style.backgroundImage = "url(../images/backgrounds/its-a-computer.jpg)";
+    title.style.backgroundImage = "url(images/backgrounds/its-a-computer.jpg)";
   } else if (tabNum == 5) {
     url = 'article-content/tab5.html';
     sidebarURL = 'article-content/sideBar5.html';
     title.innerHTML = '<h1 class="headline">Comparative Study on Different Types of Motherboards</h1>';
-    title.style.backgroundImage = "url(../images/backgrounds/closeup-of-computer-motherboard.jpg)";
+    title.style.backgroundImage = "url(images/backgrounds/closeup-of-computer-motherboard.jpg)";
   }  else if (tabNum == 6) {
     url = 'article-content/tab6.html';
     sidebarURL = 'article-content/sideBar6.html';
     title.innerHTML = '<h1 class="headline">Comparative Study on Different Types of Computers</h1>';
-    title.style.backgroundImage = "url(../images/backgrounds/pdp.jpg)";
+    title.style.backgroundImage = "url(images/backgrounds/pdp.jpg)";
     title.style.backgroundPositionY = "center";
   }
 
